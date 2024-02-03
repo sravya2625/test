@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Malla Sravya</div>
+          <div class="text-three">I am a FullStack Developer.</div>
+          <div class="text-four">From India</div>
+        </div>
+        <div class="button">
+          <button>Hire Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="sravya2.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Developing is My Passion</div>
+            <p>
+              Hi , This is sravya and I am a Full Stack Development enthusiast. I get immense pleasure in creating artistic applications where my creativity meets my passion.
+            </p>
+            <div class="button">
+              <button>Download Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills and Strengths Reflects Our Knowledge</div>
+            <p>I think my greatest strength is team management. I really enjoy working as a team and leveraging everyone's unique skills and perspectives on a project, while at the same time having fun and maintaining a manageable work/life balance.</p>
+            <div class="experience">
+              <div class="num">0</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavaScript</div>
+              <div class="per">50%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Python</div>
+              <div class="per">70%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services Section Start -->
+    <section class="Certifications" id="Certifications">
+      <div class="content">
+        <div class="title"><span>My Certifications</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Cloud data management- Oracle</div>
+            <p>The certification is done under oracle university in the year 2023</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Advanced DSA-Greek for Greeks</div>
+            <p>This certification is done through online by Greek for Greeks in the year 2023</p>
+          </div>
+           <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Data analytic-MA</div>
+            <p>This certification is done through online by micro soft in the year 2023</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          <p>For more information about me , please contact or drop a chat.</p>
+          <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false">
+              <h3>GET IN TOUCH</h3>
+              <input type="text" id="name" placeholder="your name" required>
+              <input type="email" id="email" placeholder="email id" required>
+              <input type="text" id="phone" placeholder="phone no." required>
+              <textarea id="message" rows="4" placeholder="how can we help you?"></textarea> 
+              <button type="submit">send</button>   
+             </form>
+          </div>
+          <script src=" https://smtpjs.com/v3/smtp.js"></script>
+          <script>
+            function sendEmail(){
+              Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "sravya.malla143@gmail.com",
+                        Password : "9515433491",
+                        To : "pujarisravya21@gmail.com",
+                        From : Document.getelementbyid("email").value,
+                        Subject : "new contact form enquiry",
+                        Body : "name: "+ doucment.getelementbyid("name").value
+                            +"<br> email:" + doucment.getelementbyid("email").value
+                            +"<br> phone no:" + doucment.getelementbyid("phone").value
+                            +"<br> message:" + doucment.getelementbyid("message").value
+              }).then(
+                message => alert("message sent successfully")
+              );
+            }
+          </script>
+          <div class="button">
+            <button>Let's Chat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">sravya</a> | &#169; 2023 All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
